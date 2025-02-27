@@ -30,6 +30,13 @@
         </set>
 
         where id = #{id}
-
     </select>
+
+
+    <select id="getById" parameterType="java.lang.Long" resultType="com.sky.entity.Employee">
+        select * from employee where id = #{id}
+    </select>
+
+
+
 </mapper>
